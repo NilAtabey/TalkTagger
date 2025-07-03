@@ -1,3 +1,5 @@
+![TalkTagger Logo](logo.png)
+
 # TalkTagger 2.0
 
 **Can you guess who said that?** Upload your group chat history and turn it into an exciting guessing game!
