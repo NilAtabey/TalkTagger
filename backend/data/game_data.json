@@ -1,0 +1,220 @@
+{
+  "game_rounds": [
+    {
+      "round": 1,
+      "message": "RUTHIE UR SO CUTE HAZHHAHHAHHS",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 4.84,
+      "bert_similarity": 35.2,
+      "is_synthetic": false
+    },
+    {
+      "round": 2,
+      "message": "merry christmas nil <3",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 5.37,
+      "bert_similarity": 30.4,
+      "is_synthetic": false
+    },
+    {
+      "round": 3,
+      "message": "and i lost hope halfway trying kinda",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 5.55,
+      "bert_similarity": 33.6,
+      "is_synthetic": false
+    },
+    {
+      "round": 4,
+      "message": "i can make a new world",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 5.84,
+      "bert_similarity": 40.6,
+      "is_synthetic": false
+    },
+    {
+      "round": 5,
+      "message": "i have a probability exam tomorrow and a question is eating me alive",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 4.89,
+      "bert_similarity": 27.2,
+      "is_synthetic": false
+    },
+    {
+      "round": 1,
+      "message": "my laptop been acting up again think might need new air conditioning fan inside",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 9.83,
+      "bert_similarity": 17.2,
+      "is_synthetic": true
+    },
+    {
+      "round": 2,
+      "message": "you ever play that new game out its kinda hard but think go try it out",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 9.74,
+      "bert_similarity": 28.1,
+      "is_synthetic": true
+    },
+    {
+      "round": 3,
+      "message": "\"ever heard of that new band nil they sound pretty good lmao want sure if you'd like them\"",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 15.96,
+      "bert_similarity": 24.1,
+      "is_synthetic": true
+    },
+    {
+      "round": 4,
+      "message": "been listening to this new band think you might like it hey ruthie check it out",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 9.74,
+      "bert_similarity": 35.7,
+      "is_synthetic": true
+    },
+    {
+      "round": 5,
+      "message": "\"i think i need to talk to him about this lmfao it's getting a bit much want sure what to do\"",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 9.89,
+      "bert_similarity": 13.1,
+      "is_synthetic": true
+    }
+  ],
+  "stats": {
+    "most_messages_sent": {
+      "username": "niltheoverkill",
+      "count": 763
+    },
+    "most_words_said": {
+      "username": "niltheoverkill",
+      "count": 5417
+    },
+    "longest_messages": {
+      "username": "niltheoverkill",
+      "average": 7.1
+    },
+    "user_common_words": {
+      "niltheoverkill": [
+        {
+          "word": "think",
+          "count": 36
+        },
+        {
+          "word": "yeah",
+          "count": 34
+        },
+        {
+          "word": "know",
+          "count": 33
+        }
+      ],
+      "peachyqiss": [
+        {
+          "word": "yeah",
+          "count": 44
+        },
+        {
+          "word": "like",
+          "count": 32
+        },
+        {
+          "word": "know",
+          "count": 30
+        }
+      ]
+    },
+    "user_signature_words": {
+      "niltheoverkill": [
+        {
+          "word": "ruthie",
+          "score": 8.5
+        },
+        {
+          "word": "apply",
+          "score": 8.0
+        }
+      ],
+      "peachyqiss": [
+        {
+          "word": "okay",
+          "score": 17.0
+        },
+        {
+          "word": "nil",
+          "score": 10.0
+        }
+      ]
+    },
+    "user_signature_phrases": {
+      "niltheoverkill": {
+        "phrase": "think go",
+        "count": 4
+      },
+      "peachyqiss": {
+        "phrase": "let know",
+        "count": 6
+      }
+    },
+    "capitalization_stats": {
+      "niltheoverkill": 0.394,
+      "peachyqiss": 0.237
+    },
+    "proper_punctuation": {
+      "username": "peachyqiss",
+      "ratio": 0.068
+    },
+    "most_exclamation_marks": {
+      "username": "peachyqiss",
+      "count": 25
+    },
+    "most_question_marks": {
+      "username": "peachyqiss",
+      "count": 47
+    },
+    "most_sentence_capitalizations": {
+      "username": "niltheoverkill",
+      "ratio": 0.394
+    }
+  }
+}

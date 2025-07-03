@@ -1,0 +1,315 @@
+{
+  "selected_messages": {
+    "niltheoverkill": [
+      {
+        "message": "hey ruthie",
+        "distinctiveness_score": 9.5,
+        "bert_similarity": 39.4,
+        "is_synthetic": false
+      },
+      {
+        "message": "If you said 40°C with air-conditioning or 30°C with no air conditioning, you know which one I’m gonna pick",
+        "distinctiveness_score": 9.35,
+        "bert_similarity": 10.3,
+        "is_synthetic": false
+      },
+      {
+        "message": "Even if it’s like 30° out the fact that there’s no air conditioning and the fact that the humidity is high I think it makes it unbearable",
+        "distinctiveness_score": 9.18,
+        "bert_similarity": 10.2,
+        "is_synthetic": false
+      },
+      {
+        "message": "honestly fair",
+        "distinctiveness_score": 7.5,
+        "bert_similarity": 42.0,
+        "is_synthetic": false
+      },
+      {
+        "message": "i hate sexyy red bro i know",
+        "distinctiveness_score": 5.55,
+        "bert_similarity": 32.5,
+        "is_synthetic": false
+      },
+      {
+        "message": "and i lost hope halfway trying kinda",
+        "distinctiveness_score": 5.55,
+        "bert_similarity": 33.6,
+        "is_synthetic": false
+      },
+      {
+        "message": "i have a couple things to tell u",
+        "distinctiveness_score": 5.41,
+        "bert_similarity": 45.3,
+        "is_synthetic": false
+      },
+      {
+        "message": "no u did not watch the movie bro",
+        "distinctiveness_score": 5.41,
+        "bert_similarity": 28.3,
+        "is_synthetic": false
+      },
+      {
+        "message": "hey this is actually kinda pleasant",
+        "distinctiveness_score": 5.34,
+        "bert_similarity": 40.0,
+        "is_synthetic": false
+      },
+      {
+        "message": "i know all of em bro",
+        "distinctiveness_score": 5.34,
+        "bert_similarity": 37.1,
+        "is_synthetic": false
+      },
+      {
+        "message": "gonna apply on the next one",
+        "distinctiveness_score": 5.34,
+        "bert_similarity": 43.0,
+        "is_synthetic": false
+      },
+      {
+        "message": "i dont think bro has a coin to flip",
+        "distinctiveness_score": 5.26,
+        "bert_similarity": 30.5,
+        "is_synthetic": false
+      },
+      {
+        "message": "we're just floating on a dot in the universe bro",
+        "distinctiveness_score": 5.14,
+        "bert_similarity": 35.1,
+        "is_synthetic": false
+      },
+      {
+        "message": "Do not even breathe the same air as them",
+        "distinctiveness_score": 4.97,
+        "bert_similarity": 24.8,
+        "is_synthetic": false
+      },
+      {
+        "message": "we just got the news a couple minutes ago dude's dead af",
+        "distinctiveness_score": 4.96,
+        "bert_similarity": 26.8,
+        "is_synthetic": false
+      },
+      {
+        "message": "yeah thats only fair",
+        "distinctiveness_score": 4.92,
+        "bert_similarity": 39.9,
+        "is_synthetic": false
+      },
+      {
+        "message": "im so excited bro",
+        "distinctiveness_score": 4.92,
+        "bert_similarity": 43.4,
+        "is_synthetic": false
+      },
+      {
+        "message": "didnt apply this cycle",
+        "distinctiveness_score": 4.92,
+        "bert_similarity": 40.3,
+        "is_synthetic": false
+      },
+      {
+        "message": "i have a probability exam tomorrow and a question is eating me alive",
+        "distinctiveness_score": 4.89,
+        "bert_similarity": 27.2,
+        "is_synthetic": false
+      },
+      {
+        "message": "RUTHIE UR SO CUTE HAZHHAHHAHHS",
+        "distinctiveness_score": 4.84,
+        "bert_similarity": 35.2,
+        "is_synthetic": false
+      }
+    ],
+    "peachyqiss": [
+      {
+        "message": "i just feel bad because I want her to have the opportunity to adjust to her new life without having to worry. she’s literally moving to a new country and i don’t want the server to be affected again",
+        "distinctiveness_score": 6.25,
+        "bert_similarity": 24.0,
+        "is_synthetic": false
+      },
+      {
+        "message": "okay now you’re just showing off",
+        "distinctiveness_score": 5.84,
+        "bert_similarity": 46.3,
+        "is_synthetic": false
+      },
+      {
+        "message": "i can make a new world",
+        "distinctiveness_score": 5.84,
+        "bert_similarity": 40.6,
+        "is_synthetic": false
+      },
+      {
+        "message": "nil you’re so wise when you’re tired",
+        "distinctiveness_score": 5.8,
+        "bert_similarity": 39.6,
+        "is_synthetic": false
+      },
+      {
+        "message": "i’ve been busy with my new kid",
+        "distinctiveness_score": 5.8,
+        "bert_similarity": 39.5,
+        "is_synthetic": false
+      },
+      {
+        "message": "i usually wake up at 9-10 so",
+        "distinctiveness_score": 5.8,
+        "bert_similarity": 23.2,
+        "is_synthetic": false
+      },
+      {
+        "message": "thank you for being here for me nil",
+        "distinctiveness_score": 5.63,
+        "bert_similarity": 39.0,
+        "is_synthetic": false
+      },
+      {
+        "message": "all of the staff after new years ^",
+        "distinctiveness_score": 5.63,
+        "bert_similarity": 30.4,
+        "is_synthetic": false
+      },
+      {
+        "message": "i’ll wake up early so i’ll have time before class",
+        "distinctiveness_score": 5.39,
+        "bert_similarity": 34.5,
+        "is_synthetic": false
+      },
+      {
+        "message": "merry christmas nil <3",
+        "distinctiveness_score": 5.37,
+        "bert_similarity": 30.4,
+        "is_synthetic": false
+      },
+      {
+        "message": "no im okay fr this is just my lock in face",
+        "distinctiveness_score": 5.3,
+        "bert_similarity": 47.7,
+        "is_synthetic": false
+      },
+      {
+        "message": "learning two new programming languages while doing other stuff is hard 😭",
+        "distinctiveness_score": 5.23,
+        "bert_similarity": 15.6,
+        "is_synthetic": false
+      },
+      {
+        "message": "when i wake up you’re awake so we can do it then",
+        "distinctiveness_score": 5.23,
+        "bert_similarity": 35.7,
+        "is_synthetic": false
+      },
+      {
+        "message": "hey, i’m okay",
+        "distinctiveness_score": 5.14,
+        "bert_similarity": 44.6,
+        "is_synthetic": false
+      },
+      {
+        "message": "nono it’s okay",
+        "distinctiveness_score": 5.14,
+        "bert_similarity": 45.9,
+        "is_synthetic": false
+      },
+      {
+        "message": "okay she’s fine",
+        "distinctiveness_score": 5.14,
+        "bert_similarity": 41.6,
+        "is_synthetic": false
+      },
+      {
+        "message": "are you okay",
+        "distinctiveness_score": 5.14,
+        "bert_similarity": 50.2,
+        "is_synthetic": false
+      },
+      {
+        "message": "is that okay",
+        "distinctiveness_score": 5.14,
+        "bert_similarity": 57.8,
+        "is_synthetic": false
+      },
+      {
+        "message": "ohhhh okok",
+        "distinctiveness_score": 4.9,
+        "bert_similarity": 52.4,
+        "is_synthetic": false
+      },
+      {
+        "message": "ohhh okok",
+        "distinctiveness_score": 4.9,
+        "bert_similarity": 54.1,
+        "is_synthetic": false
+      }
+    ]
+  },
+  "game_rounds": [
+    {
+      "round": 1,
+      "message": "RUTHIE UR SO CUTE HAZHHAHHAHHS",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 4.84,
+      "bert_similarity": 35.2,
+      "is_synthetic": false
+    },
+    {
+      "round": 2,
+      "message": "merry christmas nil <3",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 5.37,
+      "bert_similarity": 30.4,
+      "is_synthetic": false
+    },
+    {
+      "round": 3,
+      "message": "and i lost hope halfway trying kinda",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 5.55,
+      "bert_similarity": 33.6,
+      "is_synthetic": false
+    },
+    {
+      "round": 4,
+      "message": "i can make a new world",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 5.84,
+      "bert_similarity": 40.6,
+      "is_synthetic": false
+    },
+    {
+      "round": 5,
+      "message": "i have a probability exam tomorrow and a question is eating me alive",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 4.89,
+      "bert_similarity": 27.2,
+      "is_synthetic": false
+    }
+  ],
+  "metadata": {
+    "total_users": 2,
+    "total_selected_messages": 40,
+    "total_game_rounds": 5
+  }
+}

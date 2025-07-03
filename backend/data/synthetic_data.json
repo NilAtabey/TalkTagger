@@ -1,0 +1,135 @@
+{
+  "selected_messages": {
+    "niltheoverkill": [
+      {
+        "message": "hey ruthie think go see that new movie this weekend you down",
+        "distinctiveness_score": 14.96,
+        "is_synthetic": true,
+        "bert_similarity": 44.0
+      },
+      {
+        "message": "my laptop been acting up again think might need new air conditioning fan inside",
+        "distinctiveness_score": 9.83,
+        "is_synthetic": true,
+        "bert_similarity": 17.2
+      },
+      {
+        "message": "just finished that exam felt pretty fair but man those last questions were tough",
+        "distinctiveness_score": 7.83,
+        "is_synthetic": true,
+        "bert_similarity": 27.4
+      },
+      {
+        "message": "you ever play that new game out its kinda hard but think go try it out",
+        "distinctiveness_score": 9.74,
+        "is_synthetic": true,
+        "bert_similarity": 28.1
+      },
+      {
+        "message": "been listening to this new band think you might like it hey ruthie check it out",
+        "distinctiveness_score": 9.74,
+        "is_synthetic": true,
+        "bert_similarity": 35.7
+      }
+    ],
+    "peachyqiss": [
+      {
+        "message": "\"it's so hot outside okok want sure if we should go to the park later right think\"",
+        "distinctiveness_score": 14.99,
+        "is_synthetic": true,
+        "bert_similarity": 22.7
+      },
+      {
+        "message": "\"ever heard of that new band nil they sound pretty good lmao want sure if you'd like them\"",
+        "distinctiveness_score": 15.96,
+        "is_synthetic": true,
+        "bert_similarity": 24.1
+      },
+      {
+        "message": "\"i think i need to talk to him about this lmfao it's getting a bit much want sure what to do\"",
+        "distinctiveness_score": 9.89,
+        "is_synthetic": true,
+        "bert_similarity": 13.1
+      },
+      {
+        "message": "\"have you tried that new pizza place yet okay it's amazing let know if you want to go\"",
+        "distinctiveness_score": 12.96,
+        "is_synthetic": true,
+        "bert_similarity": 16.8
+      },
+      {
+        "message": "\"weekend plans nil i was thinking of just chilling at home okok want sure if you have anything in mind\"",
+        "distinctiveness_score": 12.91,
+        "is_synthetic": true,
+        "bert_similarity": 31.0
+      }
+    ]
+  },
+  "game_rounds": [
+    {
+      "round": 1,
+      "message": "my laptop been acting up again think might need new air conditioning fan inside",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 9.83,
+      "bert_similarity": 17.2,
+      "is_synthetic": true
+    },
+    {
+      "round": 2,
+      "message": "you ever play that new game out its kinda hard but think go try it out",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 9.74,
+      "bert_similarity": 28.1,
+      "is_synthetic": true
+    },
+    {
+      "round": 3,
+      "message": "\"ever heard of that new band nil they sound pretty good lmao want sure if you'd like them\"",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 15.96,
+      "bert_similarity": 24.1,
+      "is_synthetic": true
+    },
+    {
+      "round": 4,
+      "message": "been listening to this new band think you might like it hey ruthie check it out",
+      "correct_author": "niltheoverkill",
+      "choices": [
+        "niltheoverkill",
+        "peachyqiss"
+      ],
+      "distinctiveness_score": 9.74,
+      "bert_similarity": 35.7,
+      "is_synthetic": true
+    },
+    {
+      "round": 5,
+      "message": "\"i think i need to talk to him about this lmfao it's getting a bit much want sure what to do\"",
+      "correct_author": "peachyqiss",
+      "choices": [
+        "peachyqiss",
+        "niltheoverkill"
+      ],
+      "distinctiveness_score": 9.89,
+      "bert_similarity": 13.1,
+      "is_synthetic": true
+    }
+  ],
+  "metadata": {
+    "total_users": 2,
+    "total_synthetic_messages": 10,
+    "total_game_rounds": 5
+  }
+}

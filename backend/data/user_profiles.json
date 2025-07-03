@@ -1,0 +1,266 @@
+{
+  "niltheoverkill": {
+    "message_count": 763,
+    "total_words": 5417,
+    "avg_message_length_words": 7.1,
+    "avg_word_length": 5.43,
+    "raw_vocab_size": 990,
+    "most_common_words": [
+      {
+        "word": "think",
+        "count": 36
+      },
+      {
+        "word": "yeah",
+        "count": 34
+      },
+      {
+        "word": "know",
+        "count": 33
+      },
+      {
+        "word": "go",
+        "count": 33
+      },
+      {
+        "word": "like",
+        "count": 31
+      },
+      {
+        "word": "good",
+        "count": 27
+      },
+      {
+        "word": "right",
+        "count": 19
+      },
+      {
+        "word": "say",
+        "count": 19
+      },
+      {
+        "word": "ruthie",
+        "count": 17
+      },
+      {
+        "word": "time",
+        "count": 17
+      }
+    ],
+    "signature_words": [
+      {
+        "word": "ruthie",
+        "score": 8.5
+      },
+      {
+        "word": "apply",
+        "score": 8.0
+      },
+      {
+        "word": "fair",
+        "score": 6.0
+      },
+      {
+        "word": "student",
+        "score": 6.0
+      },
+      {
+        "word": "exam",
+        "score": 6.0
+      },
+      {
+        "word": "couple",
+        "score": 5.0
+      },
+      {
+        "word": "kinda",
+        "score": 5.0
+      },
+      {
+        "word": "honestly",
+        "score": 5.0
+      },
+      {
+        "word": "bro",
+        "score": 4.5
+      },
+      {
+        "word": "air",
+        "score": 4.0
+      }
+    ],
+    "signature_phrases": [
+      {
+        "phrase": "think go",
+        "count": 4
+      },
+      {
+        "phrase": "air conditioning",
+        "count": 3
+      },
+      {
+        "phrase": "hey ruthie",
+        "count": 3
+      },
+      {
+        "phrase": "let know",
+        "count": 3
+      },
+      {
+        "phrase": "make sense",
+        "count": 3
+      }
+    ],
+    "capitalized_sentence_start_ratio": 0.394,
+    "lowercase_only_message_ratio": 0.537,
+    "all_caps_word_ratio": 0.05,
+    "proper_punctuation_ratio": 0.054,
+    "exclamation_count": 8,
+    "question_mark_count": 43,
+    "emoji_count": 6,
+    "sample_messages": [
+      "us president?? yes maam",
+      "ITS THE SMACK DAB MIDDLE OF ITALY HAHAJDSHAD",
+      "did you know?",
+      "Yeah??",
+      "DUDE",
+      "If you said nothing about it, this would’ve stayed as is and just imagine how many students are out there with grades below 70",
+      "Definitely never happened to me. I would never let that happen.",
+      "it's formatted yknow",
+      "No takebacksies :fingerWave:",
+      "the letters of apart are written apart if a part is seperate than another"
+    ]
+  },
+  "peachyqiss": {
+    "message_count": 689,
+    "total_words": 4390,
+    "avg_message_length_words": 6.37,
+    "avg_word_length": 5.09,
+    "raw_vocab_size": 740,
+    "most_common_words": [
+      {
+        "word": "yeah",
+        "count": 44
+      },
+      {
+        "word": "like",
+        "count": 32
+      },
+      {
+        "word": "know",
+        "count": 30
+      },
+      {
+        "word": "go",
+        "count": 27
+      },
+      {
+        "word": "think",
+        "count": 26
+      },
+      {
+        "word": "want",
+        "count": 20
+      },
+      {
+        "word": "right",
+        "count": 20
+      },
+      {
+        "word": "thing",
+        "count": 17
+      },
+      {
+        "word": "okay",
+        "count": 17
+      },
+      {
+        "word": "lmfao",
+        "count": 15
+      }
+    ],
+    "signature_words": [
+      {
+        "word": "okay",
+        "score": 17.0
+      },
+      {
+        "word": "nil",
+        "score": 10.0
+      },
+      {
+        "word": "okok",
+        "score": 9.0
+      },
+      {
+        "word": "lmao",
+        "score": 9.0
+      },
+      {
+        "word": "lmfao",
+        "score": 7.5
+      },
+      {
+        "word": "new",
+        "score": 7.0
+      },
+      {
+        "word": "serena",
+        "score": 6.0
+      },
+      {
+        "word": "hahahahaha",
+        "score": 6.0
+      },
+      {
+        "word": "hahahaha",
+        "score": 5.0
+      },
+      {
+        "word": "wake",
+        "score": 5.0
+      }
+    ],
+    "signature_phrases": [
+      {
+        "phrase": "let know",
+        "count": 6
+      },
+      {
+        "phrase": "right think",
+        "count": 3
+      },
+      {
+        "phrase": "want sure",
+        "count": 3
+      },
+      {
+        "phrase": "class right",
+        "count": 2
+      },
+      {
+        "phrase": "class right think",
+        "count": 2
+      }
+    ],
+    "capitalized_sentence_start_ratio": 0.237,
+    "lowercase_only_message_ratio": 0.716,
+    "all_caps_word_ratio": 0.059,
+    "proper_punctuation_ratio": 0.068,
+    "exclamation_count": 25,
+    "question_mark_count": 47,
+    "emoji_count": 3,
+    "sample_messages": [
+      "yeah i’m totally fine w that, i noticed we missed deadlines for opinions on things and ended up not doing an event bc people wouldn’t respond",
+      "PERFECT i love them",
+      "LMFAO okay",
+      "it basically is",
+      "SAFE*",
+      "good luck to you too",
+      "sounds good",
+      "east*",
+      "what uni?",
+      "i thought it was just NA 😭"
+    ]
+  }
+}

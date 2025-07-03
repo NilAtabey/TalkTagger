@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalkTagger - Can you guess who said that?</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Styles moved to style.css -->
+</head>
+
+<body>
+    <!-- Homepage -->
+    <div id="homepage" class="screen active">
+        <!-- Help Button -->
+        <div class="help-button" onclick="showHelp()">
+            <span>?</span>
+        </div>
+
+        <div class="container">
+            <div class="homepage">
+                <div class="left-section">
+                    <img src="favicon.png" alt="TalkTagger Logo"
+                        style="width:350px;height:350px;display:block;margin:0 auto 20px auto;">
+                    <p class="description">
+                        <b>Can you guess who said that?</b><br>
+                        Turn your chats into an exciting guessing game!<br>
+                        Challenge your friends to see who knows everyone best.
+                    </p>
+                </div>
+                <div class="right-section">
+                    <div class="action-card">
+                        <h3>Join a Game</h3>
+                        <input type="text" id="joinUsername" class="input" placeholder="Enter your username"
+                            maxlength="20">
+                        <input type="text" id="joinGameCode" class="input" placeholder="Game Code" maxlength="6">
+                        <button class="btn secondary" onclick="joinGame()">Join Game</button>
+                        <div id="joinError" class="error hidden"></div>
+                    </div>
+                    <div class="action-card">
+                        <h3>Host a Game</h3>
+                        <button class="btn" onclick="showHostSetup()">Create Game</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Popup Modal -->
+    <div id="helpModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="close-button" onclick="hideHelp()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="help-section">
+                    <h3>🎮 What is TalkTagger?</h3>
+                    <p>TalkTagger is a fun guessing game where players try to identify who sent each message from your
+                        group chat history. The game features both real messages from your chat and AI-generated
+                        synthetic messages that mimic your friends' writing styles.</p>
+                </div>
+
+                <div class="help-section">
+                    <h3>📋 How to Play</h3>
+                    <ol>
+                        <li>Upload your chat export files in a txt format.</li>
+                        <li>Players enter a username and the game code provided on the host screen</li>
+                        <li>Each round shows a message and up to 4 options for the author</li>
+                        <li>Correct guesses earn points based on message difficulty</li>
+                    </ol>
+                    <div class="score-explanations">
+                        <strong>Score Explanations:</strong>
+                        <ul>
+                            <li><b>Distinctiveness Score:</b> This score shows how much a message matches a player's
+                                unique texting style, based on things like word choice, punctuation, and message length.
+                                Higher scores mean the message is more typical for that player. There's no fixed
+                                maximum—the score increases as more of the player's signature habits appear in the
+                                message.</li>
+                            <li><b>BERT Similarity Score:</b> This score uses advanced AI to measure how similar a
+                                message is to a player's real messages, considering both meaning and style. It's shown
+                                as a percentage from 0% to 100%, where higher values mean the message is more similar to
+                                that player's usual way of texting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="help-section">
+                    <h3>🏆 Scoring System</h3>
+                    <ul>
+                        <li><strong>Correct Answer:</strong> Earn points equal to the message's distinctiveness score
+                            (1-15 points)</li>
+                        <li><strong>Wrong Answer:</strong> 0 points</li>
+                        <li><strong>Time Bonus:</strong> Faster answers may earn bonus points</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>🔄 Game Phases</h3>
+                    <div class="phase-explanation">
+                        <div class="phase-item">
+                            <h4>Real Messages</h4>
+                            <p>Actual messages from your chat history. These are easier to identify since they're
+                                genuine.</p>
+                        </div>
+                        <div class="phase-item">
+                            <h4>Synthetic Messages</h4>
+                            <p>AI-generated messages that mimic your friends' writing styles. These are worth
+                                <strong>double</strong> points.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-section">
+                    <h3>⏱️ Game Flow</h3>
+                    <ul>
+                        <li>Each round lasts 15 seconds</li>
+                        <li>Players must select an answer before time runs out</li>
+                        <li>Results are shown after each round</li>
+                        <li>Final results show the winner and a scoreboard that you can share!</li>
+                    </ul>
+                </div>
+
+                <div class="help-section">
+                    <h3>💡 Tips for Success</h3>
+                    <ul>
+                        <li>Pay attention to writing style and common phrases</li>
+                        <li>Look for unique speech patterns and vocabulary</li>
+                        <li>Consider the context and tone of messages</li>
+                        <li>Don't rush - use the all time if needed</li>
+                        <li>Learn from wrong answers to improve in future rounds!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="hideHelp()">Got it!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Host Setup -->
+    <div id="hostSetup" class="screen">
+        <div class="container">
+            <div class="host-setup-layout">
+                <div class="host-setup-header">
+                    <h2 class="setup-title gradient-yellow-title">Setup Your Game</h2>
+                </div>
+                <div class="setup-columns">
+                    <div class="setup-col platform-col">
+                        <div class="action-card">
+                            <h3>Select Chat Platform</h3>
+                            <div class="platform-selection">
+                                <!-- Hidden radio inputs for form data -->
+                                <input type="radio" name="platform" value="dc" id="discord" checked
+                                    style="display:none;">
+                                <input type="radio" name="platform" value="wp" id="whatsapp" style="display:none;">
+
+                                <!-- Clickable platform buttons -->
+                                <div class="platform-button selected" data-platform="dc" onclick="selectPlatform('dc')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-discord">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                                        <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                                        <path
+                                            d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .160 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
+                                        <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+                                    </svg>
+                                    <span>Discord</span>
+                                </div>
+                                <div class="platform-button" data-platform="wp" onclick="selectPlatform('wp')">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                                        <path
+                                            d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                                    </svg>
+                                    <span>WhatsApp</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setup-col upload-col">
+                        <div class="action-card">
+                            <h3>Upload Chat Files</h3>
+                            <div class="upload-area" id="uploadArea">
+                                <h4>📁 Upload Your Chat Export</h4>
+                                <p>Export your chats as <b>TXT</b> file</p>
+                                <p>Drag and drop your chat export files here, or click to select files</p>
+                                <input type="file" id="fileInput" multiple accept=".txt,.json,.zip"
+                                    style="display: none;">
+                            </div>
+                            <div id="selectedFiles" class="hidden">
+                                <h4>Selected Files:</h4>
+                                <ul id="filesList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setup-col pipeline-col">
+                        <div id="pipelineStatus" class="action-card">
+                            <h3>Chat Data Processing</h3>
+                            <div id="pipelineProgress">
+                                <div class="loading"></div>
+                                <p id="pipelineMessage">Please upload your files to start</p>
+                                <div class="progress-container">
+                                    <div id="progressBar" class="progress-bar"></div>
+                                </div>
+                                <p id="progressText">0%</p>
+                            </div>
+                            <div id="pipelineError" class="error hidden"></div>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn" onclick="showHomepage()">Back</button>
+                            <button class="btn yellow" id="uploadBtn" onclick="uploadFiles()">Upload & Process</button>
+                            <button class="btn green" id="createGameBtn" onclick="createGame()" disabled>Create
+                                Game</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lobby (Host View) -->
+    <div id="lobbyHost" class="screen">
+        <div class="container">
+            <div class="lobby">
+                <h2>Game Lobby</h2>
+                <div class="room-code" id="roomCode">ABCD</div>
+                <p>Players can join using this code</p>
+                <div class="players-list" id="playersList"></div>
+                <div class="action-buttons">
+                    <button class="btn red" onclick="cancelGame()">Cancel Game</button>
+                    <button class="btn green" id="startGameBtn" onclick="startGame()" disabled>Start Game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lobby (Player View) -->
+    <div id="lobbyPlayer" class="screen">
+        <div class="container">
+            <div class="lobby">
+                <h2>Waiting for Game to Start</h2>
+                <div class="room-code" id="playerRoomCode">ABCD</div>
+                <p>Welcome, <span id="playerName">Player</span>!</p>
+                <div class="players-list" id="playersListPlayer"></div>
+                <p>Waiting for host to start the game...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tutorial / Warning Screen -->
+    <div id="tutorialScreen" class="screen">
+        <div class="container"
+            style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;">
+            <div class="tutorial-card" style="background:none;box-shadow:none;">
+                <h2 style="text-align:center;font-size:2.5rem;margin-bottom:2.5rem;">How to Play</h2>
+                <div class="tutorial-columns"
+                    style="display:flex;gap:2.5rem;justify-content:center;align-items:stretch;margin:2rem 0;flex-wrap:wrap;">
+                    <div class="tutorial-bubble">
+                        <div class="tutorial-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 19l18 0" />
+                                <path
+                                    d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+                            </svg>
+                        </div>
+                        <div class="tutorial-tip"><b>Questions are on the host's screen</b></div>
+                    </div>
+                    <div class="tutorial-bubble">
+                        <div class="tutorial-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-device-mobile">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M6 5a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2v-14z" />
+                                <path d="M11 4h2" />
+                                <path d="M12 17v.01" />
+                            </svg>
+                        </div>
+                        <div class="tutorial-tip"><b>Use your phone to answer</b></div>
+                    </div>
+                    <div class="tutorial-bubble">
+                        <div class="tutorial-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-time-duration-15">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 15h2a1 1 0 0 0 1 -1v-1a1 1 0 0 0 -1 -1h-2v-3h3" />
+                                <path d="M9 9v6" />
+                                <path d="M3 12v.01" />
+                                <path d="M12 21v.01" />
+                                <path d="M7.5 4.2v.01" />
+                                <path d="M16.5 19.8v.01" />
+                                <path d="M7.5 19.8v.01" />
+                                <path d="M4.2 16.5v.01" />
+                                <path d="M19.8 16.5v.01" />
+                                <path d="M4.2 7.5v.01" />
+                                <path d="M21 12a9 9 0 0 0 -9 -9" />
+                            </svg>
+                        </div>
+                        <div class="tutorial-tip"><b>Answer before the timer runs out</b></div>
+                    </div>
+                </div>
+                <div id="tutorialCountdown"
+                    style="margin-top:2.5rem;font-size:1.3rem;color:#fff;font-weight:600;text-align:center;"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="screen">
+        <div class="container">
+            <div class="game-header">
+                <div class="round-info">
+                    <div class="phase-indicator" id="phaseIndicator">Real Messages</div>
+                    <div>Round <span id="currentRound">1</span> of <span id="totalRounds">10</span></div>
+                </div>
+                <div class="timer" id="timer">15</div>
+            </div>
+            <div class="message-card">
+                <div class="message-text" id="messageText">"This is a sample message"</div>
+                <div class="choices" id="choices"></div>
+                <div class="distinctiveness-score hidden" id="distinctivenessScore">
+                    Distinctiveness Score: <span id="scoreValue">0</span>/10
+                    <br><small>Higher scores indicate more unique writing styles</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Round Results -->
+    <div id="roundResults" class="screen">
+        <div class="container">
+            <h2>Round Results</h2>
+            <div class="round-results-columns" id="hostRoundResultsColumns" style="display:none;">
+                <div class="round-summary-col" id="roundSummary"></div>
+                <div class="round-leaderboard-col">
+                    <div class="scoreboard" id="roundScoreboard"></div>
+                </div>
+            </div>
+            <div id="playerRoundSummary"></div>
+            <div class="action-buttons" id="roundActions">
+                <!-- Buttons will be injected by JS -->
+            </div>
+            <div id="hostWaitingMsg" class="hidden" style="text-align:center; margin-top:20px; font-size:1.2rem;">
+                Waiting for all players to be ready...
+            </div>
+        </div>
+    </div>
+
+    <!-- Final Results -->
+    <div id="finalResults" class="screen">
+        <div class="flex flex-col items-center w-full">
+            <!-- Top: Game Over -->
+            <div class="w-full max-w-2xl mx-auto pt-8 pb-4 flex flex-col items-center">
+                <h2 class="text-3xl font-bold mb-4 text-center final-results-title">Game Over!</h2>
+            </div>
+            <!-- Middle: Leaderboard & Superlatives side by side -->
+            <div class="flex flex-row gap-4 w-full max-w-2xl mx-auto flex-grow items-stretch">
+                <!-- Leaderboard -->
+                <div class="flex-1 flex flex-col max-w-xs w-full result-card">
+                    <h2 class="text-xl font-bold mb-2 text-center" id="winner">Leaderboard</h2>
+                    <div class="scoreboard flex-grow overflow-y-auto" id="finalScoreboard"></div>
+                </div>
+                <!-- Superlatives -->
+                <div class="flex-1 flex flex-col max-w-xs w-full result-card">
+                    <h2 class="text-xl font-bold mb-2 text-center">Superlatives</h2>
+                    <div class="superlatives-container flex-grow overflow-y-auto" id="superlatives"></div>
+                </div>
+            </div>
+            <!-- Bottom: Buttons row -->
+            <div class="w-full max-w-2xl mx-auto pb-6 pt-4 flex flex-row items-center justify-center gap-4"
+                style="margin-top: 1.5rem;">
+                <button class="btn w-full" onclick="playAgain()">Play Again</button>
+                <button class="btn yellow w-full" onclick="shareResults()">Share Results</button>
+                <button class="btn green w-full" onclick="showHomepage()">New Game</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script>
+        // Use the current page's hostname and port for Socket.IO connection
+        const SERVER_URL = window.location.origin;
+
+        // Initialize Socket.IO connection
+        const socket = io(SERVER_URL);
+
+        // Connection status handling
+        socket.on('connect', () => {
+            console.log('Connected to server');
+        });
+
+        socket.on('disconnect', () => {
+            console.log('Disconnected from server');
+        });
+
+        socket.on('connect_error', (error) => {
+            console.error('Connection error:', error);
+            alert('Failed to connect to server. Please check the IP address and make sure the server is running.');
+        });
+    </script>
+    <script src="game.js"></script>
+
+    <div id="popup"
+        style="display:none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px 20px; border-radius: 5px; z-index: 9999;">
+        Link copied to clipboard!
+    </div>
+</body>
+
+</html>
