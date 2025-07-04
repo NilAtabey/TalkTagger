@@ -28,8 +28,8 @@
 
 1. **Click "Create Game"** on the homepage
 2. **Select your chat platform:**
-   - **Discord:** Export your server/channel as JSON
-   - **WhatsApp:** Export your chat as TXT file
+   - **Discord:** Export your server/channel as TXT
+   - **WhatsApp:** Export your chat as a TXT file
 3. **Upload your chat files:**
    - Drag and drop files or click to select
    - Supports single files or ZIP archives
@@ -49,9 +49,9 @@
 
 **Score Explanations:**
 
-- **Distinctiveness Score:** This score shows how much a message matches a player's unique texting style, based on things like word choice, punctuation, and message length. Higher scores mean the message is more typical for that player. There's no fixed maximum—the score increases as more of the player's signature habits appear in the message.
+- **Distinctiveness Score:** This score indicates how closely a message aligns with a player's unique texting style, based on factors such as word choice, punctuation, and message length. Higher scores mean the message is more typical for that player. There's no fixed maximum—the score increases as more of the player's signature habits appear in the message.
 
-- **BERT Similarity Score:** This score uses advanced AI to measure how similar a message is to a player's real messages, considering both meaning and style. It's shown as a percentage from 0% to 100%, where higher values mean the message is more similar to that player's usual way of texting.
+- **BERT Similarity Score:** This score utilizes measures the similarity between a message and a player's actual messages, taking into account both meaning and style. It's shown as a percentage from 0% to 100%, where higher values mean the message is more similar to that player's usual way of texting.
 
 ## File Upload Requirements
 
@@ -111,9 +111,10 @@ python final.py
 
 ## Troubleshooting
 
-- **Upload fails:** Make sure your files are in the correct format (JSON for Discord, TXT for WhatsApp)
+- **Upload fails:** Make sure your files are in the correct format (TXT)
 - **Processing errors:** Check the console output for detailed error messages
 - **Connection issues:** Verify the server IP address and port in the browser console
+- For other issues, you can open a new issue on this repository or contact me at nilatabey@gmail.com
 
 ## License
 
