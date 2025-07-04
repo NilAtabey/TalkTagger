@@ -56,14 +56,13 @@
 ## File Upload Requirements
 
 ### Discord Exports:
-- Export your Discord server/channel as JSON
-- Include all message history
-- Upload the JSON file or ZIP containing multiple JSON files
+- Export your Discord direct messages/server channel as TXT using external tools
+- Upload the TXT file(s)
 
 ### WhatsApp Exports:
-- Export your WhatsApp chat as TXT file
-- Include all message history
-- Upload the TXT file or ZIP containing multiple TXT files
+- Go to Settings > Chats > Export Chat
+- Export your WhatsApp chat as ZIP file
+- Extract it and upload the TXT file
 
 ## Technical Details
 
