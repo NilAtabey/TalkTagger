@@ -1,8 +1,10 @@
-![TalkTagger Logo](logo.png)
+![TalkTagger Logo](logo_rounded.png)
 
-# TalkTagger 2.0
+# TalkTagger
 
 **Can you guess who said that?** Upload your group chat history and turn it into an exciting guessing game!
+
+[Read the project report here](talktagger_project_report.pdf)
 
 ## Quick Start
 
