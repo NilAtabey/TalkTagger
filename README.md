@@ -88,23 +88,6 @@ The system automatically runs a complete pipeline when you upload files:
 
 ## Development
 
-### Project Structure:
-```
-TalkTagger2/
-├── frontend/          # Web interface and game logic
-│   ├── app.py        # Flask server with file upload
-│   ├── game.html     # Main game interface
-│   └── static/       # JavaScript and CSS
-├── backend/          # Data processing pipeline
-│   ├── dc_parser.py  # Discord file parser
-│   ├── wp_parser.py  # WhatsApp file parser
-│   ├── chat_preprocessor.py
-│   ├── message_selector.py
-│   ├── message_generator.py
-│   └── sentiment_classifier.py
-└── final.py          # Standalone pipeline runner
-```
-
 ### Running the Pipeline Manually:
 If you want to run the data processing pipeline separately:
 ```bash
