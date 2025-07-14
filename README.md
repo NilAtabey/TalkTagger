@@ -5,6 +5,8 @@
 **Can you guess who said that?** Upload your group chat history and turn it into an exciting guessing game!
 
 [Read the project report here](talktagger_project_report.pdf)
+[View the project presentation here](talktagger_presentation.pdf)
+
 
 ## Quick Start
 
