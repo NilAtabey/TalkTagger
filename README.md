@@ -35,6 +35,11 @@
 
 **Can you guess who said that?** Upload your group chat history and turn it into an exciting guessing game!
 
+<div align="center">
+  <img src="docs/app_screenshot.png" alt="TalkTagger App Screenshot" width="600" />
+  <p><em>Game Lobby</em></p>
+</div>
+
 ## Quick Start
 
 1. **Replace the Mistral AI API key in** `backend/message_generator.py`
