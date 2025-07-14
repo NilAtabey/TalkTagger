@@ -21,7 +21,7 @@
 ---
 
 <div align="center">
-  <img src="logo_rounded.png" alt="TalkTagger Logo" width="200">
+  <img src="docs/logo_rounded.png" alt="TalkTagger Logo" width="200">
 </div>
 
 <div align="center">
@@ -34,10 +34,6 @@
 # TalkTagger
 
 **Can you guess who said that?** Upload your group chat history and turn it into an exciting guessing game!
-
-[Read the project report here](talktagger_project_report.pdf)
-[View the project presentation here](talktagger_presentation.pdf)
-
 
 ## Quick Start
 
