@@ -26,8 +26,8 @@
 
 <div align="center">
 
-📄 <a href="talktagger_project_report.pdf"><strong>Read the Project Report</strong></a><br>
-🖥️ <a href="talktagger_presentation.pdf"><strong>View the Presentation Slides</strong></a>
+📄 <a href="docs/talktagger_project_report.pdf"><strong>Read the Project Report</strong></a><br>
+🖥️ <a href="docs/talktagger_presentation.pdf"><strong>View the Presentation Slides</strong></a>
 
 </div>
 
