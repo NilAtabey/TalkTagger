@@ -1,12 +1,39 @@
-![TalkTagger Logo](logo_rounded.png)
+# <div align="center">TalkTagger</div>
+
+<div align="center">
+  <p>
+    <a href="#quick-start">Quick Start</a> •
+    <a href="#how-to-play">How to Play</a> •
+    <a href="#technical-details">Technical Details</a> •
+    <a href="#game-features">Game Features</a> •
+    <a href="#development">Development</a> •
+    <a href="#license">License</a>
+  </p>
+
+  <a href="https://docs.mistral.ai/getting-started/models/models_overview/">
+    <img src="https://img.shields.io/badge/Mistral AI--Powered-orange" alt="BERT NLP">
+  </a>
+  <a href="mailto:nilatabey@gmail.com">
+    <img src="https://img.shields.io/badge/Contact-nilatabey%40gmail.com-blue" alt="Contact">
+  </a>
+</div>
+
+---
+
+<div align="center">
+  <img src="logo_rounded.png" alt="TalkTagger Logo" width="200">
+</div>
+
+<div align="center">
+
+📄 <a href="talktagger_project_report.pdf"><strong>Read the Project Report</strong></a><br>
+🖥️ <a href="talktagger_presentation.pdf"><strong>View the Presentation Slides</strong></a>
+
+</div>
 
 # TalkTagger
 
 **Can you guess who said that?** Upload your group chat history and turn it into an exciting guessing game!
-
-[Read the project report here](talktagger_project_report.pdf)
-[View the project presentation here](talktagger_presentation.pdf)
-
 
 ## Quick Start
 
@@ -103,6 +130,13 @@ python final.py
 - **Connection issues:** Verify the server IP address and port in the browser console
 - For other issues, you can open a new issue on this repository or contact me at nilatabey@gmail.com
 
+## Acknowledgments
+
+This project was developed as part of the **AI Lab: Computer Vision and NLP** course taught by Prof. Daniele Pannone for the **Applied Computer Science and Artificial Intelligence** BSc program at **Sapienza University of Rome**.  
+I’m sharing all of this material as a reference for future students and anyone interested in building similar NLP-based interactive applications.
+
+
 ## License
 
-This project is for educational and entertainment purposes. 
+This project is licensed under the [MIT License](LICENSE).  
+It is shared for educational and entertainment purposes. Feel free to use, modify, and build upon it with proper attribution.
